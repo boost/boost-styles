@@ -3,4 +3,4 @@ require:
   - rubocop-performance
 
 inherit_from: 
-  - .rubocop_rails.yml
+  - rubocop_rails.yml
