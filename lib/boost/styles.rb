@@ -1,4 +1,6 @@
-require "boost/styles/version"
+# frozen_string_literal: true
+
+require 'boost/styles/version'
 
 module Boost
   module Styles
