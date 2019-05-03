@@ -1,0 +1,182 @@
+# https://gitlab.com/gitlab-org/gitlab-styles/blob/master/rubocop-lint.yml
+
+# Checks for ambiguous block association with method when param passed without
+# parentheses.
+Lint/AmbiguousBlockAssociation:
+  Enabled: false
+
+# Checks for ambiguous operators in the first argument of a method invocation
+# without parentheses.
+Lint/AmbiguousOperator:
+  Enabled: true
+
+# This cop checks for ambiguous regexp literals in the first argument of
+# a method invocation without parentheses.
+Lint/AmbiguousRegexpLiteral:
+  Enabled: false
+
+# This cop checks for assignments in the conditions of
+# if/while/until.
+Lint/AssignmentInCondition:
+  Enabled: false
+
+# Default values in optional keyword arguments and optional ordinal arguments
+# should not refer back to the name of the argument.
+Lint/CircularArgumentReference:
+  Enabled: true
+
+# Check for debugger calls.
+Lint/Debugger:
+  Enabled: true
+
+# Check for deprecated class method calls.
+Lint/DeprecatedClassMethods:
+  Enabled: true
+
+# Check for immutable argument given to each_with_object.
+Lint/EachWithObjectArgument:
+  Enabled: true
+
+# Check for odd code arrangement in an else block.
+Lint/ElseLayout:
+  Enabled: true
+
+# Checks for empty ensure block.
+Lint/EmptyEnsure:
+  Enabled: true
+
+# Checks for the presence of `when` branches without a body.
+Lint/EmptyWhen:
+  Enabled: true
+
+# END blocks should not be placed inside method definitions.
+Lint/EndInMethod:
+  Enabled: true
+
+# Do not use return in an ensure block.
+Lint/EnsureReturn:
+  Enabled: true
+
+# Checks for flip flops.
+Lint/FlipFlop:
+  Enabled: true
+
+# Catches floating-point literals too large or small for Ruby to represent.
+Lint/FloatOutOfRange:
+  Enabled: true
+
+# The number of parameters to format/sprint must match the fields.
+Lint/FormatParameterMismatch:
+  Enabled: true
+
+# This cop checks for *rescue* blocks with no body.
+Lint/HandleExceptions:
+  Enabled: false
+
+# Checks for adjacent string literals on the same line, which could better be
+# represented as a single string literal.
+Lint/ImplicitStringConcatenation:
+  Enabled: true
+
+# Checks for attempts to use `private` or `protected` to set the visibility
+# of a class method, which does not work.
+Lint/IneffectiveAccessModifier:
+  Enabled: false
+
+# Checks of literals used in conditions.
+Lint/LiteralAsCondition:
+  Enabled: true
+
+# Checks for literals used in interpolation.
+Lint/LiteralInInterpolation:
+  Enabled: true
+
+# This cop checks for uses of *begin...end while/until something*.
+Lint/Loop:
+  Enabled: false
+
+# Do not use nested method definitions.
+Lint/NestedMethodDefinition:
+  Enabled: true
+
+# Do not omit the accumulator when calling `next` in a `reduce`/`inject` block.
+Lint/NextWithoutAccumulator:
+  Enabled: true
+
+# Checks for method calls with a space before the opening parenthesis.
+Lint/ParenthesesAsGroupedExpression:
+  Enabled: true
+
+# Checks for `rand(1)` calls. Such calls always return `0` and most likely
+# a mistake.
+Lint/RandOne:
+  Enabled: true
+
+# Use parentheses in the method call to avoid confusion about precedence.
+Lint/RequireParentheses:
+  Enabled: true
+
+# Avoid rescuing the Exception class.
+Lint/RescueException:
+  Enabled: true
+
+# Checks for the order which exceptions are rescued to avoid rescueing a less specific exception before a more specific exception.
+Lint/ShadowedException:
+  Enabled: false
+
+# This cop looks for use of the same name as outer local variables
+# for block arguments or block local variables.
+Lint/ShadowingOuterLocalVariable:
+  Enabled: false
+
+# Checks for Object#to_s usage in string interpolation.
+Lint/StringConversionInInterpolation:
+  Enabled: true
+
+# Do not use prefix `_` for a variable that is used.
+Lint/UnderscorePrefixedVariableName:
+  Enabled: true
+
+# This cop checks for using Fixnum or Bignum constant
+Lint/UnifiedInteger:
+  Enabled: true
+
+# This cop checks for unneeded usages of splat expansion
+Lint/UnneededSplatExpansion:
+  Enabled: false
+
+# Unreachable code.
+Lint/UnreachableCode:
+  Enabled: true
+
+# This cop checks for unused block arguments.
+Lint/UnusedBlockArgument:
+  Enabled: false
+
+# This cop checks for unused method arguments.
+Lint/UnusedMethodArgument:
+  Enabled: false
+
+# Checks for useless access modifiers.
+Lint/UselessAccessModifier:
+  Enabled: true
+
+# Checks for useless assignment to a local variable.
+Lint/UselessAssignment:
+  Enabled: true
+
+# Checks for comparison of something with itself.
+Lint/UselessComparison:
+  Enabled: true
+
+# Checks for useless `else` in `begin..end` without `rescue`.
+Lint/UselessElseWithoutRescue:
+  Enabled: true
+
+# Checks for useless setter call to a local variable.
+Lint/UselessSetterCall:
+  Enabled: true
+
+# Possible use of operator/literal/variable in void context.
+Lint/Void:
+  Enabled: true
