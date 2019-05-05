@@ -11,4 +11,3 @@ AllCops:
     - 'bin/**/*'
     - 'config/**/*'
     - 'db/**/*'
-    - 'spec/**/*'
