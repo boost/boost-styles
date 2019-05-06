@@ -5,7 +5,7 @@ Shared Boost styles configuration
 ## What's inside?
 * Rubocop for Rails
 * Rubocop performance
-* Rubocop RSpec - WIP
+* Rubocop RSpec
 * Stylelint - WIP
 * ESLint - WIP
 
