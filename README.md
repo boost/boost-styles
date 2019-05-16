@@ -15,7 +15,7 @@ Shared Boost styles configuration
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'boost-styles', git: 'git@github.com:boost/boost-styles.git', require: false
+gem 'boost-styles', git: 'https://github.com/boost/boost-styles.git', require: false
 ```
 
 And then execute:
