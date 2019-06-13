@@ -15,22 +15,21 @@ Shared Boost styles configuration
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'boost-styles', git: 'https://github.com/boost/boost-styles.git', require: false
+group :development do
+  ...
+  gem 'boost-styles', git: 'https://github.com/boost/boost-styles.git'
+  ...
+end
 ```
 
-And then execute:
+Run bundle:
 
     $ bundle
 
-## Usage
+Run the generator:
 
-Add this line to your application's `.rubocop.yml` file.
+    $ rails g boost_styles:install
 
-```yaml
-inherit_gem: 
-  boost-styles:
-    - rubocop_default.yml
-```
 
 ## Contributing
 
