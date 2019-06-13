@@ -13,14 +13,66 @@ module BoostStyles
         send :"#{file_method}_file", config_file_path, config_file_content
       end
 
+      def create_stylelint_file
+        return if stylelint_file_exists?
+
+        run('yarn add stylelint stylelint-config-standard')
+        create_file(stylelint_file_path, stylelint_file_content)
+      end
+
+      def print_instructions
+        say '-----------------------------------------'
+        say '🎉 All done! 🎉'
+        say ''
+        say 'Run rubocop in parallel to check the offenses:', :green
+        say '  rubocop -P', :yellow
+        say 'To fix the offenses, run:', :green
+        say '  rubocop -a', :yellow
+        say 'To generate todo, run:', :green
+        say '  rubocop --auto-gen-config', :yellow
+        say ''
+        say 'Run stylelint to check the offenses:', :green
+        say '  stylelint --color app/assets/stylesheets/', :yellow
+        say 'To fix the offenses, run:', :green
+        say '  stylelint --color --fix app/assets/stylesheets/', :yellow
+      end
+
       private
+
+        def stylelint_file_exists?
+          File.exist?(stylelint_file_path)
+        end
 
         def config_file_exists?
           File.exist?(config_file_path)
         end
 
+        def stylelint_file_path
+          '.stylelintrc.yml'
+        end
+
         def config_file_path
           '.rubocop.yml'
+        end
+
+        def stylelint_file_content
+          <<-YAML.strip_heredoc
+          extends: stylelint-config-standard
+
+          rules:
+            # Complains about FontAwesome
+            font-family-no-missing-generic-family-keyword: null
+
+            at-rule-no-unknown:
+              - true
+              - ignoreAtRules:
+                - extend
+                - if
+                - each
+                - include
+                - mixin
+                - at-root
+          YAML
         end
 
         def config_file_content
