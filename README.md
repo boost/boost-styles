@@ -30,15 +30,6 @@ Run the generator:
 
     $ rails g boost_styles:install
 
-## Usage
-
-Add this line to your application's `.rubocop.yml` file.
-
-```yaml
-inherit_gem: 
-  boost-styles:
-    - rubocop_default.yml
-```
 
 ## Contributing
 
