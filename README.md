@@ -22,9 +22,13 @@ group :development do
 end
 ```
 
-And then execute:
+Run bundle:
 
     $ bundle
+
+Run the generator:
+
+    $ rails g boost_styles:install
 
 ## Usage
 
