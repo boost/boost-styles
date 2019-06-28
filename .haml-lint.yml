@@ -1,0 +1,10 @@
+linters:
+  ImplicitDiv:
+    enabled: false
+    severity: error
+
+  LineLength:
+    max: 100
+
+  RuboCop:
+    enabled: false

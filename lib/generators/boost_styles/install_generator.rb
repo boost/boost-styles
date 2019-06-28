@@ -20,6 +20,12 @@ module BoostStyles
         create_file(stylelint_file_path, stylelint_file_content)
       end
 
+      def create_haml_lint_file
+        return if haml_lint_file_exists?
+
+        create_file(haml_lint_file_path, haml_lint_file_content)
+      end
+
       def print_instructions
         say '-----------------------------------------'
         say '🎉 All done! 🎉'
@@ -35,9 +41,17 @@ module BoostStyles
         say '  stylelint --color app/assets/stylesheets/', :yellow
         say 'To fix the offenses, run:', :green
         say '  stylelint --color --fix app/assets/stylesheets/', :yellow
+        say ''
+        say 'Run haml_lint to check the offenses:', :green
+        say '  bundle exec haml-lint app/**/*.html.haml', :yellow
+        say 'To fix the offenses, you need to diy:', :green
       end
 
       private
+
+        def haml_lint_file_exists?
+          File.exist?(haml_lint_file_path)
+        end
 
         def stylelint_file_exists?
           File.exist?(stylelint_file_path)
@@ -47,12 +61,31 @@ module BoostStyles
           File.exist?(config_file_path)
         end
 
+        def haml_lint_file_path
+          '.haml-lint.yml'
+        end
+        
         def stylelint_file_path
           '.stylelintrc.yml'
         end
 
         def config_file_path
           '.rubocop.yml'
+        end
+
+        def haml_lint_file_content
+          <<-YAML.strip_heredoc
+          linters:
+            ImplicitDiv:
+              enabled: false
+              severity: error
+
+            LineLength:
+              max: 100
+
+            RuboCop:
+              enabled: false
+          YAML
         end
 
         def stylelint_file_content

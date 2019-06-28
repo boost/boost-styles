@@ -45,4 +45,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'rubocop', '~> 0.71'
   spec.add_dependency 'rubocop-performance', '~> 1.1.0'
   spec.add_dependency 'rubocop-rspec', '~> 1.33'
+  spec.add_dependency 'haml_lint', '~> 0.32'
 end

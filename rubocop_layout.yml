@@ -69,7 +69,7 @@ Layout/TrailingWhitespace:
 # extra level of indentation.
 Layout/IndentationConsistency:
   Enabled: true
-  EnforcedStyle: rails
+  EnforcedStyle: indented_internal_methods
 
 # Two spaces, no tabs (for indentation).
 Layout/IndentationWidth:
