@@ -3,8 +3,8 @@ PATH
   specs:
     boost-styles (0.1.0)
       haml_lint (~> 0.32)
-      rubocop (~> 0.71)
-      rubocop-performance (~> 1.1.0)
+      rubocop (~> 0.73)
+      rubocop-performance (~> 1.4.0)
       rubocop-rspec (~> 1.33)
 
 GEM
@@ -132,15 +132,15 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.8.0)
     rspec-support (3.8.2)
-    rubocop (0.71.0)
+    rubocop (0.73.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
       parser (>= 2.6)
       rainbow (>= 2.2.2, < 4.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 1.7)
-    rubocop-performance (1.1.0)
-      rubocop (>= 0.67.0)
+    rubocop-performance (1.4.0)
+      rubocop (>= 0.71.0)
     rubocop-rspec (1.33.0)
       rubocop (>= 0.60.0)
     ruby-progressbar (1.10.1)
@@ -172,8 +172,8 @@ DEPENDENCIES
   rails (~> 5.2)
   rake (~> 10.0)
   rspec (~> 3.0)
-  rubocop (= 0.71.0)
-  rubocop-rspec (= 1.33.0)
+  rubocop (= 0.73)
+  rubocop-rspec (= 1.33)
 
 BUNDLED WITH
    2.0.1
