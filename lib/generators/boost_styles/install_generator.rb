@@ -64,7 +64,7 @@ module BoostStyles
         def haml_lint_file_path
           '.haml-lint.yml'
         end
-        
+
         def stylelint_file_path
           '.stylelintrc.yml'
         end
