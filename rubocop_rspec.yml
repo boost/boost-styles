@@ -1,0 +1,12 @@
+RSpec/DescribeClass:
+  Exclude:
+    - spec/features/**/**
+
+RSpec/ExampleLength:
+  Exclude:
+    - spec/features/**/**
+
+RSpec/ExpectActual:
+  Exclude:
+    - spec/routes/**/**
+    - spec/routing/**/**

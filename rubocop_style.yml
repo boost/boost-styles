@@ -67,3 +67,8 @@ Style/UnneededPercentQ:
 Style/StringLiterals:
   Enabled: true
   EnforcedStyle: single_quotes
+
+Style/MixinUsage:
+  Exclude:
+    - bin/setup
+    - bin/update
