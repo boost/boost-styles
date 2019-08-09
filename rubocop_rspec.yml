@@ -10,3 +10,12 @@ RSpec/ExpectActual:
   Exclude:
     - spec/routes/**/**
     - spec/routing/**/**
+
+RSpec/MessageSpies:
+  Description: Checks that message expectations are set using spies.
+  Enabled: true
+  EnforcedStyle: receive
+  SupportedStyles:
+  - have_received
+  - receive
+  StyleGuide: http://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/MessageSpies
