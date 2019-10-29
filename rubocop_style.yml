@@ -60,7 +60,7 @@ Style/Documentation:
   Enabled: false
 
 # Use quotes for string literals when they are enough.
-Style/UnneededPercentQ:
+Style/RedundantPercentQ:
   Enabled: true
 
 # Check quotes usage according to lint rule below.

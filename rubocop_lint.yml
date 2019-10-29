@@ -142,7 +142,7 @@ Lint/UnifiedInteger:
   Enabled: true
 
 # This cop checks for unneeded usages of splat expansion
-Lint/UnneededSplatExpansion:
+Lint/RedundantSplatExpansion:
   Enabled: false
 
 # Unreachable code.
