@@ -6,21 +6,14 @@ env:
   node: true
 extends:
 - standard
-- plugin:vue/recommended
 overrides:
   files:
-  - '*.js'
-  - '*.vue'
+  - '*.js''
   excludedFiles:
   - '*.config.js'
 parserOptions:
   sourceType: module
-  ecmaFeatures:
-    jsx: true
-  ecmaVersion: 2018
-plugins:
-- vue
-- react
+plugins: []
 globals:
   _: true
   '$': true
