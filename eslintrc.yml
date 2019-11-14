@@ -5,22 +5,25 @@ env:
   jquery: true
   node: true
 extends:
-  - standard
-  - plugin:vue/recommended
+- standard
+- plugin:vue/recommended
 overrides:
   files:
-    - '*.js'
-    - '*.vue'
+  - '*.js'
+  - '*.vue'
   excludedFiles:
-    - '*.config.js'
+  - '*.config.js'
 parserOptions:
   sourceType: module
-plugins: [
-  'vue'
-]
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: 2018
+plugins:
+- vue
+- react
 globals:
   _: true
-  "$": true
+  '$': true
   ga: true
   Foundation: true
 rules:
