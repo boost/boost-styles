@@ -6,14 +6,17 @@ env:
   node: true
 extends:
   - standard
+  - plugin:vue/recommended
 overrides:
   files:
     - '*.js'
+    - '*.vue'
   excludedFiles:
     - '*.config.js'
 parserOptions:
   sourceType: module
 plugins: [
+  'vue'
 ]
 globals:
   _: true
