@@ -30,6 +30,9 @@ Run the generator:
 
     $ rails g boost_styles:install
 
+## Tested on these Rails versions
+- `5.2.x`
+- `6.x`
 
 ## Contributing
 
