@@ -7,3 +7,7 @@ inherit_from:
   - rubocop_rails.yml
   - rubocop_performance.yml
   - rubocop_rspec.yml
+  
+  - rubocop_layout.yml
+  - rubocop_metrics.yml
+  - rubocop_style.yml

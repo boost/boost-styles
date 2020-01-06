@@ -1,0 +1,46 @@
+# A calculated magnitude based on number of assignments,
+# branches, and conditions.
+Metrics/AbcSize:
+  Enabled: true
+  Max: 54.28
+
+# This cop checks if the length of a block exceeds some maximum value.
+Metrics/BlockLength:
+  Enabled: false
+
+# Avoid excessive block nesting.
+Metrics/BlockNesting:
+  Enabled: true
+  Max: 4
+
+# Avoid classes longer than 100 lines of code.
+Metrics/ClassLength:
+  Enabled: false
+
+# A complexity metric that is strongly correlated to the number
+# of test cases needed to validate a method.
+Metrics/CyclomaticComplexity:
+  Enabled: true
+  Max: 13
+
+# Limit lines to 80 characters.
+Metrics/LineLength:
+  Enabled: false
+
+# Avoid methods longer than 10 lines of code.
+Metrics/MethodLength:
+  Enabled: false
+
+# Avoid modules longer than 100 lines of code.
+Metrics/ModuleLength:
+  Enabled: false
+
+# Avoid parameter lists longer than three or four parameters.
+Metrics/ParameterLists:
+  Enabled: true
+  Max: 8
+
+# A complexity metric geared towards measuring complexity for a human reader.
+Metrics/PerceivedComplexity:
+  Enabled: true
+  Max: 14
