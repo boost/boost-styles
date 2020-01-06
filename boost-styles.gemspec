@@ -43,8 +43,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec', '~> 3.0'
 
   spec.add_dependency 'haml_lint', '~> 0.33'
-  spec.add_dependency 'rubocop', '~> 0.77'
-  spec.add_dependency 'rubocop-performance', '~> 1.5.1'
-  spec.add_dependency 'rubocop-rails', '~> 2.4.0'
+  spec.add_dependency 'rubocop', '~> 0.78'
+  spec.add_dependency 'rubocop-performance', '~> 1.5'
+  spec.add_dependency 'rubocop-rails', '~> 2.4'
   spec.add_dependency 'rubocop-rspec', '~> 1.37'
 end
