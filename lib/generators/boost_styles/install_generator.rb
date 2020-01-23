@@ -26,6 +26,13 @@ module BoostStyles
         create_file(haml_lint_file_path, haml_lint_file_content)
       end
 
+      def create_eslint_file
+      return if eslint_file_exists?
+
+      run('yarn add eslint')
+      create_file(eslint_file_path, eslint_file_content)
+      end
+
       def print_instructions
         say '-----------------------------------------'
         say '🎉 All done! 🎉'
@@ -61,6 +68,10 @@ module BoostStyles
           File.exist?(config_file_path)
         end
 
+        def eslint_file_exists?
+          File.exists?(eslint_file_path)
+        end
+
         def haml_lint_file_path
           '.haml-lint.yml'
         end
@@ -71,6 +82,10 @@ module BoostStyles
 
         def config_file_path
           '.rubocop.yml'
+        end
+
+        def eslint_file_path
+          '.eslintrc.yml'
         end
 
         def haml_lint_file_content
@@ -113,6 +128,37 @@ module BoostStyles
           inherit_gem:
             boost-styles:
               - rubocop_default.yml
+          YAML
+        end
+
+        def eslint_file_content
+          <<-YAML.strip_heredoc
+          ---
+          env:
+            browser: true
+            es6: true
+            jquery: true
+            node: true
+          extends:
+          - standard
+          overrides:
+            files:
+            - '*.js''
+            excludedFiles:
+            - '*.config.js'
+          parserOptions:
+            sourceType: module
+          plugins: []
+          globals:
+            _: true
+            '$': true
+            ga: true
+            Foundation: true
+          rules:
+            no-unused-vars:
+            - error
+            - varsIgnorePattern: '_.*'
+              argsIgnorePattern: '_.*'
           YAML
         end
     end
