@@ -23,10 +23,6 @@ Metrics/CyclomaticComplexity:
   Enabled: true
   Max: 13
 
-# Limit lines to 80 characters.
-Metrics/LineLength:
-  Enabled: false
-
 # Avoid methods longer than 10 lines of code.
 Metrics/MethodLength:
   Enabled: false

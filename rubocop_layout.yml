@@ -3,3 +3,7 @@
 Layout/IndentationConsistency:
   Enabled: true
   EnforcedStyle: indented_internal_methods
+
+# Limit lines to 80 characters.
+Layout/LineLength:
+  Enabled: false
