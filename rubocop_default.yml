@@ -1,13 +1,13 @@
-require: 
+require:
   - rubocop-performance
   - rubocop-rspec
 
-inherit_from: 
+inherit_from:
   - rubocop_all.yml
-  - rubocop_layout.yml
-  - rubocop_lint.yml
-  - rubocop_metrics.yml
   - rubocop_rails.yml
-  - rubocop_style.yml
   - rubocop_performance.yml
   - rubocop_rspec.yml
+  
+  - rubocop_layout.yml
+  - rubocop_metrics.yml
+  - rubocop_style.yml
