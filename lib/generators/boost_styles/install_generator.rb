@@ -27,10 +27,10 @@ module BoostStyles
       end
 
       def create_eslint_file
-      return if eslint_file_exists?
+        return if eslint_file_exists?
 
-      run('yarn add eslint')
-      create_file(eslint_file_path, eslint_file_content)
+        run('yarn add eslint')
+        create_file(eslint_file_path, eslint_file_content)
       end
 
       def print_instructions
@@ -69,7 +69,7 @@ module BoostStyles
         end
 
         def eslint_file_exists?
-          File.exists?(eslint_file_path)
+          File.exist?(eslint_file_path)
         end
 
         def haml_lint_file_path
