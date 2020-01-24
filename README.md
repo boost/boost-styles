@@ -1,4 +1,4 @@
-# Boost::Styles
+# Boost::Styles [![Build Status](https://travis-ci.org/boost/boost-styles.svg?branch=master)](https://travis-ci.org/boost/boost-styles)
 
 Shared Boost styles configuration
 
