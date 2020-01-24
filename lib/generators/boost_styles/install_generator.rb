@@ -38,25 +38,25 @@ module BoostStyles
 
       def print_instructions
         say <<-TXT.strip_heredoc
-        -----------------------------------------
-        🎉 All done! 🎉
+          -----------------------------------------
+          🎉 All done! 🎉
 
-        Run rubocop in parallel to check the offenses:
-          -> rubocop -P
-        To fix the offenses, run:
-          -> rubocop -a
-        To generate todo, run:
-          -> rubocop --auto-gen-config
+          Run rubocop in parallel to check the offenses:
+            -> rubocop -P
+          To fix the offenses, run:
+            -> rubocop -a
+          To generate todo, run:
+            -> rubocop --auto-gen-config
 
-        Run stylelint to check the offenses:
-          -> stylelint --color app/assets/stylesheets/
-        To fix the offenses, run:
-          -> stylelint --color --fix app/assets/stylesheets/
+          Run stylelint to check the offenses:
+            -> stylelint --color app/assets/stylesheets/
+          To fix the offenses, run:
+            -> stylelint --color --fix app/assets/stylesheets/
 
-        Run haml_lint to check the offenses:
-          -> bundle exec haml-lint app/**/*.html.haml
-        To fix the offenses, you need to diy
-        -----------------------------------------
+          Run haml_lint to check the offenses:
+            -> bundle exec haml-lint app/**/*.html.haml
+          To fix the offenses, you need to diy
+          -----------------------------------------
         TXT
       end
 
