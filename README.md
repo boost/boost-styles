@@ -8,7 +8,7 @@ Shared Boost styles configuration
 - ✅ Rubocop RSpec
 - ✅ Stylelint
 - ✅ HAML Lint
-- 🚧 ESLint - WIP
+- ✅ ESLint Lint
 
 ## Installation
 
