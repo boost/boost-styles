@@ -14,6 +14,7 @@ module BoostStyles
       end
 
       def create_stylelint_file
+        return unless yes?('Do you want stylelint?')
         return if stylelint_file_exists?
 
         run('yarn add stylelint stylelint-config-standard')
@@ -21,12 +22,14 @@ module BoostStyles
       end
 
       def create_haml_lint_file
+        return unless yes?('Do you want HAML lint?')
         return if haml_lint_file_exists?
 
         create_file(haml_lint_file_path, haml_lint_file_content)
       end
 
       def create_eslint_file
+        return unless yes?('Do you want ESLint?')
         return if eslint_file_exists?
 
         run('yarn add eslint')
@@ -34,24 +37,27 @@ module BoostStyles
       end
 
       def print_instructions
-        say '-----------------------------------------'
-        say '🎉 All done! 🎉'
-        say ''
-        say 'Run rubocop in parallel to check the offenses:', :green
-        say '  rubocop -P', :yellow
-        say 'To fix the offenses, run:', :green
-        say '  rubocop -a', :yellow
-        say 'To generate todo, run:', :green
-        say '  rubocop --auto-gen-config', :yellow
-        say ''
-        say 'Run stylelint to check the offenses:', :green
-        say '  stylelint --color app/assets/stylesheets/', :yellow
-        say 'To fix the offenses, run:', :green
-        say '  stylelint --color --fix app/assets/stylesheets/', :yellow
-        say ''
-        say 'Run haml_lint to check the offenses:', :green
-        say '  bundle exec haml-lint app/**/*.html.haml', :yellow
-        say 'To fix the offenses, you need to diy:', :green
+        say <<-TXT.strip_heredoc
+        -----------------------------------------
+        🎉 All done! 🎉
+
+        Run rubocop in parallel to check the offenses:
+          -> rubocop -P
+        To fix the offenses, run:
+          -> rubocop -a
+        To generate todo, run:
+          -> rubocop --auto-gen-config
+
+        Run stylelint to check the offenses:
+          -> stylelint --color app/assets/stylesheets/
+        To fix the offenses, run:
+          -> stylelint --color --fix app/assets/stylesheets/
+
+        Run haml_lint to check the offenses:
+          -> bundle exec haml-lint app/**/*.html.haml
+        To fix the offenses, you need to diy
+        -----------------------------------------
+        TXT
       end
 
       private
