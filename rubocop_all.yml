@@ -1,5 +1,6 @@
 AllCops:
   DisplayCopNames: true
+  NewCops: disable
   Exclude:
     - '**/templates/**/*'
     - '**/vendor/**/*'

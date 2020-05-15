@@ -7,3 +7,11 @@ Layout/IndentationConsistency:
 # Limit lines to 80 characters.
 Layout/LineLength:
   Enabled: false
+
+# Keep blank lines around attribute accessors.
+Layout/EmptyLinesAroundAttributeAccessor:
+  Enabled: true
+  
+# Checks method call operators to not have spaces around them.
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: true
