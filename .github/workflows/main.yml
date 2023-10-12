@@ -26,7 +26,7 @@ jobs:
         ruby-version: ${{ matrix.ruby }}
 
     - name: Install Bundler
-      run: gem install bundler -v 2.3.7git
+      run: gem install bundler -v 2.3.7
 
     - name: Install dependencies
       run: bundle install
