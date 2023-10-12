@@ -1,6 +1,8 @@
-# Boost::Styles [![Build Status](https://travis-ci.org/boost/boost-styles.svg?branch=master)](https://travis-ci.org/boost/boost-styles)
+# Boost Styles [![Build Status](https://travis-ci.org/boost/boost-styles.svg?branch=master)](https://travis-ci.org/boost/boost-styles)
 
-Shared Boost styles configuration
+The Boost Styles Gem is a tool designed to streamline and enforce consistent coding style and linting rules for Boost projects. It simplifies the process of configuring and maintaining linting settings, promoting code quality, readability, and maintainability.
+
+This ReadMe provides comprehensive information on how to install, configure, and utilize the Boost Styles Gem in your project.
 
 ## What's inside?
 - ✅ Rubocop for Rails
