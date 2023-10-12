@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Boost']
   spec.email         = ['info@boost.co.nz']
 
-  spec.summary       = 'Shared Boost styles configuration'
+  spec.summary       = 'Shared Linting configuration for Boost projects'
   spec.description   = 'Centralised gem for all Boost styles configuration (Rubocop, ESLint etc...)'
   spec.homepage      = 'https://github.com/boost/boost-styles'
   spec.license       = 'MIT'
